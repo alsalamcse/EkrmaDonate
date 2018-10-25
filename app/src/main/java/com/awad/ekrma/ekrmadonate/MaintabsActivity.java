@@ -49,7 +49,7 @@ public class MaintabsActivity extends AppCompatActivity {
             TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
             mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-            tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
+            tabLayout.addOnTabSelectedListener(new ViewPagerOnTabSelectedListener(mViewPager));
 
             FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener() {
@@ -162,4 +162,9 @@ public class MaintabsActivity extends AppCompatActivity {
             }
 
         }
+
+    private class ViewPagerOnTabSelectedListener {
+        public ViewPagerOnTabSelectedListener(ViewPager mViewPager) {
+        }
     }
+}
