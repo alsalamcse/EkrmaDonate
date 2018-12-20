@@ -1,5 +1,8 @@
 package com.awad.ekrma.ekrmadonate;
 
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -49,7 +52,7 @@ public class MaintabsActivity extends AppCompatActivity {
             TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
             mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-            tabLayout.addOnTabSelectedListener(new ViewPagerOnTabSelectedListener(mViewPager));
+            tabLayout.addOnTabSelectedListener((TabLayout.BaseOnTabSelectedListener) new ViewPagerOnTabSelectedListener(mViewPager));
 
             FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener() {

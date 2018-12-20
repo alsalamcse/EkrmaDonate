@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "434915062316",
+    "firebase_url": "https://ekrmadonate.firebaseio.com",
+    "project_id": "ekrmadonate",
+    "storage_bucket": "ekrmadonate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434915062316:android:a1931b7ea931440d",
+        "android_client_info": {
+          "package_name": "com.awad.ekrma.ekrmadonate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434915062316-re91666aure5mgo966gdt5l1ih7r6tff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awad.ekrma.ekrmadonate",
+            "certificate_hash": "013f43c9a5d380c46de43c04644418dbe5d2a253"
+          }
+        },
+        {
+          "client_id": "434915062316-0eeuj39idu5jbokdbc5t70cc5sm55eul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVtMhbw-OSR8ilQwrfk7TG4zoD1G_4NTA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434915062316-0eeuj39idu5jbokdbc5t70cc5sm55eul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
