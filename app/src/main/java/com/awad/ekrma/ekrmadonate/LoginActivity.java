@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(LoginActivity.this, MaintabsActivity.class);
+                Intent i1 = new Intent(LoginActivity.this, foodActivity.class);
                 startActivity(i1);
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="etfirstname" type="id">etfirstname</item>
-    <item name="etlastname" type="id">etlastname</item>
-    <item name="etemail2" type="id">etemail2</item>
-    <item name="etphone" type="id">etphone</item>
-    <item name="etpassword2" type="id">etpassword2</item>
-    <item name="btnsave" type="id">btnsave</item>
-    <item name="password1" type="id">password1</item>
+    <item name="etfirstname" type="id"/>
+    <item name="etlastname" type="id"/>
+    <item name="etemail2" type="id"/>
+    <item name="etphone" type="id"/>
+    <item name="etpassword2" type="id"/>
+    <item name="btnsave" type="id"/>
+    <item name="password1" type="id"/>
 </resources>
