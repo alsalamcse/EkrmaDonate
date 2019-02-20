@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate;
+package com.awad.ekrma.ekrmadonate.dummy;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.awad.ekrma.ekrmadonate.ItemlistFragment.OnListFragmentInteractionListener;
+import com.awad.ekrma.ekrmadonate.R;
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent.DummyItem;
 
 import java.util.List;

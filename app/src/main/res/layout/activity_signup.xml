@@ -19,8 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:ems="10"
-            android:hint="First Name:"
-            android:inputType="textPersonName" />
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/lastname"
@@ -30,7 +31,8 @@
             android:hint="Last Name:"
             android:inputType="textPersonName"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="71dp" />
+            tools:layout_editor_absoluteY="71dp"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/phone"

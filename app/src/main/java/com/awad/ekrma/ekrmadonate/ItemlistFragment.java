@@ -12,8 +12,7 @@ import android.view.ViewGroup;
 
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent;
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent.DummyItem;
-
-import java.util.List;
+import com.awad.ekrma.ekrmadonate.dummy.MyItemlistRecyclerViewAdapter;
 
 /**
  * A fragment representing a list of Items.

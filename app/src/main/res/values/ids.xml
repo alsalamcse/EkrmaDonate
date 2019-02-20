@@ -7,4 +7,11 @@
     <item name="etpassword2" type="id"/>
     <item name="btnsave" type="id"/>
     <item name="password1" type="id"/>
+    <item name="etTitle" type="id">etTitle</item>
+    <item name="etTaskText" type="id">etTaskText</item>
+    <item name="etDueDate" type="id">etDueDate</item>
+    <item name="skbrImportant" type="id">skbrImportant</item>
+    <item name="skbrNecessary" type="id">skbrNecessary</item>
+    <item name="btnSaveTask" type="id">btnSaveTask</item>
+    <item name="btnDatePicker" type="id">btnDatePicker</item>
 </resources>
