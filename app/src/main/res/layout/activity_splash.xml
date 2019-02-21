@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/`"
+    android:id="@+id/jj"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    android:Layout_paddingLeft="16dp"
+    android:Layout_paddingRight="16dp"
+    android:Layout_paddingTop="16dp"
+    android:Layout_paddingBottom="16dp"
+    tools:context=".SplashActivity"
+    android:background="@drawable/retro-kitchen-cooking-home-handmade-vector-badges-logos-made-restaurant-logo-illustration-label-menu-90848646"
+    >
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
