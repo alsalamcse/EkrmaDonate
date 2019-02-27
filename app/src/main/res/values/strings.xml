@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EkrmaDonate</string>
     <string name="first_name">First Name:</string>
+    <string name="section_format">section_format</string>
 </resources>

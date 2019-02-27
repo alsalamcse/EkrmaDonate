@@ -1,7 +1,6 @@
 package com.awad.ekrma.ekrmadonate;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,7 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.abbas.samih.samihtaskmngr2018.data.MyTask;
+import com.awad.ekrma.ekrmadonate.data.MyTask;
 
 public class TaskAdapter extends ArrayAdapter <MyTask>
 {

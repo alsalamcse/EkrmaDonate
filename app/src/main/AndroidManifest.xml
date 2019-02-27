@@ -19,7 +19,7 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity" />
-        <activity android:name="com.abbas.samih.samihtaskmngr2018.data.ShowAllTasksActivity"></activity>
+        <activity android:name=".ShowAllTasksActivity"></activity>
     </application>
 
 </manifest>

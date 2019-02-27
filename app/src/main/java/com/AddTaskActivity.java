@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
-import com.abbas.samih.samihtaskmngr2018.data.MyTask;
+import com.awad.ekrma.ekrmadonate.data.MyTask;
 import com.awad.ekrma.ekrmadonate.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
