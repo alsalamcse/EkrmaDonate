@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.awad.ekrma.ekrmadonate.ItemlistFragment.OnListFragmentInteractionListener;
 import com.awad.ekrma.ekrmadonate.R;
+import com.awad.ekrma.ekrmadonate.data.MyTask;
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent.DummyItem;
 
 import java.util.List;
@@ -25,6 +26,17 @@ public class MyItemlistRecyclerViewAdapter extends RecyclerView.Adapter<MyItemli
     public MyItemlistRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
+    }
+
+    public MyItemlistRecyclerViewAdapter(List<MyTask> myTasks, MyTasksFragment.OnListFragmentInteractionListener mListener, List<DummyItem> mValues, OnListFragmentInteractionListener mListener1) {
+        this.mValues = mValues;
+        this.mListener = mListener1;
+    }
+
+    public MyItemlistRecyclerViewAdapter(List<MyTask> myTasks, MyTasksFragment.OnListFragmentInteractionListener mListener) {
+
+        mValues = null;
+        this.mListener = null;
     }
 
     @Override
