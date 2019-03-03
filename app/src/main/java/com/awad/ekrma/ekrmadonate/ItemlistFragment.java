@@ -1,5 +1,6 @@
 package com.awad.ekrma.ekrmadonate;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,100 +10,94 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent;
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent.DummyItem;
 import com.awad.ekrma.ekrmadonate.taskfragments.MyItemlistRecyclerViewAdapter;
+import com.awad.ekrma.ekrmadonate.taskfragments.MyTasksFragment;
+
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
  * <p/>
- * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
+ * Activities containing this fragment MUST implement the {@link MyTasksFragment.OnListFragmentInteractionListener}
  * interface.
  */
-public class ItemlistFragment extends Fragment {
+class ExampleAdapter extends BaseAdapter {
+    List<Product> products;
+    private Activity context;
 
-    // TODO: Customize parameter argument names
-    private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
-    private int mColumnCount = 1;
-    private OnListFragmentInteractionListener mListener;
-
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
-    public ItemlistFragment() {
+    @Override
+    public int getCount() {
+        return products.size();
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
-    public static ItemlistFragment newInstance(int columnCount) {
-        ItemlistFragment fragment = new ItemlistFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
-        fragment.setArguments(args);
-        return fragment;
+    public ExampleAdapter(List<Product> products, Activity context) {
+        this.products = products;
+        this.context = context;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
+    public Object getItem(int position) {
+        return products.get(position);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_itemlist_list, container, false);
-
-        // Set the adapter
-        if (view instanceof RecyclerView) {
-            Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            recyclerView.setAdapter(new MyItemlistRecyclerViewAdapter(DummyContent.ITEMS, mListener));
-        }
-        return view;
+    public long getItemId(int position) {
+        return position;
     }
 
-
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnListFragmentInteractionListener) {
-            mListener = (OnListFragmentInteractionListener) context;
+    public View getView(int position, View convertView, ViewGroup parent) {
+        final Product product = products.get(position);
+
+        ViewHolder holder;
+
+        if (convertView == null) {
+            LayoutInflater inflater = context.getLayoutInflater();
+            convertView = inflater.inflate(R.layout.row_shopping_item, null);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnListFragmentInteractionListener");
+            holder = (ViewHolder) convertView.getTag();
         }
+        holder.getProductTextView().setText(product.getName());
+        holder.getProductImageView(). setImageResource(product.getPicture());
+
+        return convertView;
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
+    private class ViewHolder {
+        private final TextView productTextView;
+        private final ImageView productImageView;
+
+        private ViewHolder(View wrapperView) {
+            productTextView = (TextView) wrapperView.findViewById(R.id.tvName);
+            productImageView = (ImageView) wrapperView.findViewById(R.id.ivPicture);
+
+        }
+
+        public TextView getProductTextView() {
+            return productTextView;
+        }
+
+        public ImageView getProductImageView() {
+            return productImageView;
+        }
+
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p/>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+    private class Product {
+        public int getName() {
+            return 0;
+        }
+
+        public int getPicture() {
+            return 0;
+        }
     }
 }
