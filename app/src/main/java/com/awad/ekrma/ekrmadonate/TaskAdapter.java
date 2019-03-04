@@ -28,14 +28,14 @@ public class TaskAdapter extends ArrayAdapter <MyTask>
         MyTask m=getItem(position);
 
 
-        TextView tvTitle=convertView.findViewById(R.id.);
+        TextView tvTitle=convertView.findViewById(R.id.itmtvTitle);
         TextView tvText= convertView.findViewById(R.id.);
         SeekBar skbNees=convertView.findViewById(R.id.);
         SeekBar skbImp=convertView.findViewById(R.id.);
         ImageButton ibDel=convertView.findViewById(R.id.);
 
 
-        tvText.setText(m.getText());
+        tvTitle.setText(m.getText());
     }
 
 }

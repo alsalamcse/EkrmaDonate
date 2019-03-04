@@ -15,4 +15,6 @@
     <item name="btnSaveTask" type="id">btnSaveTask</item>
     <item name="btnDatePicker" type="id">btnDatePicker</item>
     <item name="action_settings" type="id">action_settings</item>
+    <item name="section_label" type="id">section_label</item>
+    <item name="spinner" type="id">spinner</item>
 </resources>
