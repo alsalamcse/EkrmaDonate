@@ -27,7 +27,7 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link MyTasksFragment.OnListFragmentInteractionListener}
  * interface.
  */
-class ExampleAdapter extends BaseAdapter {
+class  ExampleAdapter extends BaseAdapter {
     List<Product> products;
     private Activity context;
 

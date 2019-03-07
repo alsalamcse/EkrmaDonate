@@ -11,7 +11,7 @@
     android:Layout_paddingTop="16dp"
     android:Layout_paddingBottom="16dp"
     tools:context=".SplashActivity"
-    android:background="@drawable/retro-kitchen-cooking-home-handmade-vector-badges-logos-made-restaurant-logo-illustration-label-menu-90848646"
+    android:background="@drawable/images2"
     >
 
 </RelativeLayout>

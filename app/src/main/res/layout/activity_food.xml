@@ -12,10 +12,21 @@
         android:layout_height="match_parent" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spningre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"/>
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:color/background_light"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="453dp"
+        tools:src="@android:drawable/ic_input_add" />
 
 </android.support.constraint.ConstraintLayout>
