@@ -14,7 +14,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ShowAllTasksActivity extends ArrayAdapter implements ShowAllTasksActivity1, ShowAllTasksActivity1 {
+public class ShowAllTasksActivity extends ArrayAdapter implements ShowAllTasksActivity1 {
 
     private ListView lvTasks;
     private TaskAdapter taskAdapter;
@@ -52,7 +52,7 @@ public class ShowAllTasksActivity extends ArrayAdapter implements ShowAllTasksAc
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Toast.makeText("data changed", getBaseContext(), Toast.LENGTH_SHORT, ).show();
+                Toast.makeText("data changed", getBaseContext(), Toast.LENGTH_SHORT,).show();
                 taskAdapter.clear();
                 for (DataSnapshot d : dataSnapshot.getChildren()) {
                     MyTask task = d.getValue(MyTask.class);
