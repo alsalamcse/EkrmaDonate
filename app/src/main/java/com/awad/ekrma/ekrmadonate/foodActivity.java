@@ -28,14 +28,6 @@ public class foodActivity extends Activity implements AdapterView.OnItemSelected
         spinner.setAdapter(adapter);
 
 
-
-
-
-
-
-
-
-
     }
 
 

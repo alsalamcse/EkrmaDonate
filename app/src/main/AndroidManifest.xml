@@ -20,7 +20,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".ShowAllTasksActivity" />
-        <activity android:name=".AddingActivity"></activity>
+        <activity android:name=".AddingActivity" />
     </application>
 
 </manifest>

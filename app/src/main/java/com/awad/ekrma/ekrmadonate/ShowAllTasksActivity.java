@@ -1,8 +1,9 @@
 package com.awad.ekrma.ekrmadonate;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -13,19 +14,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ShowAllTasksActivity extends AppCompatActivity {
+public class ShowAllTasksActivity extends ArrayAdapter implements ShowAllTasksActivity1, ShowAllTasksActivity1 {
 
     private ListView lvTasks;
     private TaskAdapter taskAdapter;
 
+    public ShowAllTasksActivity(@androidx.annotation.NonNull Context context, int resource) {
+        super(context, resource);
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle savedInstanceState) {
+        Context context;
+        context = super.getContext();
         setContentView(R.layout.activity_show_all_tasks);
 
 
-        lvTasks = findViewById(R.id.lstvTasks);
+        lvTasks = lvTasks.findViewById(0);
 
 
         taskAdapter = new TaskAdapter(this, R.layout.task_item);
@@ -35,36 +41,35 @@ public class ShowAllTasksActivity extends AppCompatActivity {
         readTasks();
     }
 
+    private void setContentView(int activity_show_all_tasks) {
+    }
 
 
-
-
-
-
-
-
-
-           private void readTasks() {
+    private void readTasks() {
 
                DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-               reference.child("MyTasks").addValueEventListener(new ValueEventListener() {
-                   @Override
-                   public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                       Toast.makeText(getBaseContext(), "data changed", Toast.LENGTH_SHORT).show();
-                       taskAdapter.clear();
-                       for (DataSnapshot d : dataSnapshot.getChildren()) {
-                           MyTask task = d.getValue(MyTask.class);
-                           taskAdapter.add(task);
-                       }
-                       taskAdapter.notifyDataSetChanged();
-                   }
+        reference.child("MyTasks");
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Toast.makeText("data changed", getBaseContext(), Toast.LENGTH_SHORT, ).show();
+                taskAdapter.clear();
+                for (DataSnapshot d : dataSnapshot.getChildren()) {
+                    MyTask task = d.getValue(MyTask.class);
+                    taskAdapter.add(task);
+                }
+                taskAdapter.notifyDataSetChanged();
+            }
 
-                   @Override
-                   public void onCancelled(@NonNull DatabaseError databaseError) {
+            private void getBaseContext() {
+            }
 
-                   }
-               });
-           }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
 
            }
 

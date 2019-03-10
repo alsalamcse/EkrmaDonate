@@ -14,8 +14,8 @@ import com.awad.ekrma.ekrmadonate.data.MyTask;
 public class TaskAdapter extends ArrayAdapter <MyTask>
 {
 
-    public TaskAdapter(Context context, int resource){
-        super(context, resource);
+    public TaskAdapter(ShowAllTasksActivity context, int resource){
+        super( context, resource);
 
     }
 
@@ -29,13 +29,14 @@ public class TaskAdapter extends ArrayAdapter <MyTask>
 
 
         TextView tvTitle=convertView.findViewById(R.id.itmtvTitle);
-        TextView tvText= convertView.findViewById(R.id.);
-        SeekBar skbNees=convertView.findViewById(R.id.);
-        SeekBar skbImp=convertView.findViewById(R.id.);
-        ImageButton ibDel=convertView.findViewById(R.id.);
+        TextView tvTitle1= convertView.findViewById(R.id.itmtvTitle1);
+        TextView tvTitle2 = convertView.findViewById(R.id.itmtvTitle2);
+
+        ImageButton ibDel=convertView.findViewById(R.id.itmbtninfo);
 
 
         tvTitle.setText(m.getText());
+        return convertView;
     }
 
 }
