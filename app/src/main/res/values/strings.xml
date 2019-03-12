@@ -2,4 +2,7 @@
     <string name="app_name">EkrmaDonate</string>
     <string name="first_name">First Name:</string>
     <string name="section_format">section_format</string>
+    <string name="lorem_ipsum">screens</string>
+    <string name="title_activity_slides">SlidesActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>

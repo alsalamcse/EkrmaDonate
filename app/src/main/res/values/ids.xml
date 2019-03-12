@@ -18,4 +18,5 @@
     <item name="section_label" type="id">section_label</item>
     <item name="spinner" type="id">spinner</item>
     <item name="lstvTasks" type="id">lstvTasks</item>
+    <item name="tabs" type="id" />
 </resources>
