@@ -1,15 +1,14 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.awad.ekrma.ekrmadonate.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser()!=null && auth.getCurrentUser().getEmail()!=null)
         {
-            Intent intent=new Intent(String.valueOf(LoginActivity.this))
+            Intent intent=new Intent(String.valueOf( LoginActivity.this));
 
         }
 
@@ -41,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(LoginActivity.this, foodActivity.class);
+                Intent i1 = new Intent( LoginActivity.this, foodActivity.class);
                 startActivity(i1);
 
 
@@ -50,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i2 = new Intent(LoginActivity.this, SignupActivity.class);
+                Intent i2 = new Intent( LoginActivity.this, SignupActivity.class);
                 startActivity(i2);
 
 

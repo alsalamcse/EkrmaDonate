@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
 import android.os.Bundle;
 

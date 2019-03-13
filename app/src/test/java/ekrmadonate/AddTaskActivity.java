@@ -1,4 +1,4 @@
-package com;
+package ekrmadonate;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,13 +9,13 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
-import com.awad.ekrma.ekrmadonate.data.MyTask;
 import com.awad.ekrma.ekrmadonate.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Date;
 
 public class AddTaskActivity extends AppCompatActivity {
@@ -33,7 +33,7 @@ public class AddTaskActivity extends AppCompatActivity {
         etText=findViewById(R.id.etTaskText);
         etDueDate=findViewById(R.id.etDueDate);
         skbrImportant=findViewById(R.id.skbrImportant);
-        skbrNecessary=findViewById(R.id.skbrNecessary);
+        skbrNecessary=findViewById(R.id.skbrNeccesary);
         btnSave=findViewById(R.id.btnSaveTask);
         btnDatePicker=findViewById(R.id.btnDatePicker);
 
@@ -75,7 +75,7 @@ public class AddTaskActivity extends AppCompatActivity {
         {
             MyTask task=new MyTask();
             task.setCreatedAt(new Date());
-            task.setDueDate(new Date(date));
+            //task.setDueDate(new Date(date));
             task.setText(text);
             task.setTitle(title);
             task.setImportant(important);

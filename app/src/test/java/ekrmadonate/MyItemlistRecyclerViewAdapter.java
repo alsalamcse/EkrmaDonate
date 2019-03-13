@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate.taskfragments;
+package ekrmadonate;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,10 +8,12 @@ import android.widget.TextView;
 
 import com.awad.ekrma.ekrmadonate.ItemlistFragment.OnListFragmentInteractionListener;
 import com.awad.ekrma.ekrmadonate.R;
-import com.awad.ekrma.ekrmadonate.data.MyTask;
 import com.awad.ekrma.ekrmadonate.dummy.DummyContent.DummyItem;
 
 import java.util.List;
+
+import ekrmadonate.dummy.DummyContent;
+import ekrmadonate.taskfragments.MyTasksFragment;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
@@ -49,7 +51,7 @@ public class MyItemlistRecyclerViewAdapter extends RecyclerView.Adapter<MyItemli
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+        holder.mIdView.setText(mValues.get(position).i d);
         holder.mContentView.setText(mValues.get(position).content);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +75,7 @@ public class MyItemlistRecyclerViewAdapter extends RecyclerView.Adapter<MyItemli
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public DummyItem mItem;
+        public DummyContent.DummyItem mItem;
 
         public ViewHolder(View view) {
             super(view);

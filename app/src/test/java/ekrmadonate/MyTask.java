@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate.data;
+package ekrmadonate;
 
 import java.util.Date;
 

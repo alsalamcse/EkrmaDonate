@@ -1,6 +1,4 @@
-package com.awad.ekrma.ekrmadonate.data;
-
-import java.util.Date;
+package ekrmadonate.data;
 
 public class TabKha {
     private String name;

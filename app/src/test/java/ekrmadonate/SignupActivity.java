@@ -1,14 +1,14 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
-import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.awad.ekrma.ekrmadonate.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -90,15 +90,15 @@ public class SignupActivity extends AppCompatActivity {
          */
 
         private void creatAcount(String email, String passw) {
-            auth.createUserWithEmailAndPassword(email, passw).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
+            auth.createUserWithEmailAndPassword(email, passw).addOnCompleteListener( SignupActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(SignupActivity.this, "Authentication Successful.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText( SignupActivity.this, "Authentication Successful.", Toast.LENGTH_SHORT).show();
                         //updateUserProfile(task.getResult().getUser());
                         finish();
                     } else {
-                        Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText( SignupActivity.this, "Authentication failed." + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         task.getException().printStackTrace();
                     }
                 }

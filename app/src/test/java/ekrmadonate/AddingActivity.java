@@ -1,7 +1,9 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.awad.ekrma.ekrmadonate.R;
 
 public class AddingActivity extends AppCompatActivity {
 

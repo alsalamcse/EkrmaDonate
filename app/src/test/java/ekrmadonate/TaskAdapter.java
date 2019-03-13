@@ -1,21 +1,19 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.awad.ekrma.ekrmadonate.data.MyTask;
+import com.awad.ekrma.ekrmadonate.R;
 
 public class TaskAdapter extends ArrayAdapter <MyTask>
 {
 
     public TaskAdapter(ShowAllTasksActivity context, int resource){
-        super( context, resource);
+        super( context , resource);
 
     }
 

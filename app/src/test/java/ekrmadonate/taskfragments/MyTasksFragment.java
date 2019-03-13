@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate.taskfragments;
+package ekrmadonate.taskfragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.awad.ekrma.ekrmadonate.data.MyTask;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,6 +18,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ekrmadonate.MyItemlistRecyclerViewAdapter;
+import ekrmadonate.MyTask;
 
 /**
  * A fragment representing a list of Items.

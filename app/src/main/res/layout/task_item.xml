@@ -12,7 +12,8 @@
         android:layout_height="80dp"
         app:srcCompat="@mipmap/ic_launcher"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/itmtvTitle"
@@ -20,7 +21,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteY="28dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvName"
@@ -28,7 +30,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="47dp" />
+        tools:layout_editor_absoluteY="47dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/itmbtninfo"
@@ -36,7 +39,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_info_details"
         tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="46dp" />
+        tools:layout_editor_absoluteY="46dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/itmimgfood1"
@@ -44,7 +48,8 @@
         android:layout_height="123dp"
         app:srcCompat="@drawable/kobab"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="98dp" />
+        tools:layout_editor_absoluteY="98dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/itmtvTitle1"
@@ -52,7 +57,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_editor_absoluteY="132dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvName1"
@@ -60,7 +66,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="151dp" />
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/itmbtninfo1"
@@ -68,7 +75,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_info_details"
         tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="151dp" />
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/itmimgfood2"
@@ -76,7 +84,8 @@
         android:layout_height="89dp"
         app:srcCompat="@drawable/הורד"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="232dp" />
+        tools:layout_editor_absoluteY="232dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/itmtvTitle2"
@@ -84,7 +93,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="255dp" />
+        tools:layout_editor_absoluteY="255dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvName2"
@@ -92,7 +102,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="274dp" />
+        tools:layout_editor_absoluteY="274dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/itmbtninfo2"
@@ -100,7 +111,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_info_details"
         tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="255dp" />
+        tools:layout_editor_absoluteY="255dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/itmimgfood3"
@@ -108,7 +120,8 @@
         android:layout_height="90dp"
         app:srcCompat="@drawable/maxresdefault"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="339dp" />
+        tools:layout_editor_absoluteY="339dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/itmtvTitle3"
@@ -116,7 +129,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="353dp" />
+        tools:layout_editor_absoluteY="353dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvName3"
@@ -124,7 +138,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="372dp" />
+        tools:layout_editor_absoluteY="372dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/itmbtninfo3"
@@ -132,7 +147,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_info_details"
         tools:layout_editor_absoluteX="319dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="361dp"
+        tools:ignore="MissingConstraints" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -141,6 +157,21 @@
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_add"
         tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="453dp" />
+        tools:layout_editor_absoluteY="453dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="0dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
+

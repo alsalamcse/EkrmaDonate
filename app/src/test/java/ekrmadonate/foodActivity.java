@@ -1,12 +1,12 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import com.awad.ekrma.ekrmadonate.R;
 
 public class foodActivity extends Activity implements AdapterView.OnItemSelectedListener {
 
@@ -20,7 +20,7 @@ public class foodActivity extends Activity implements AdapterView.OnItemSelected
         setContentView(R.layout.main_layout);
 
         spinner = (Spinner)findViewById(R.id.spningre);
-        ArrayAdapter<String>adapter = new ArrayAdapter<String>(foodActivity.this,
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>( foodActivity.this,
                 android.R.layout.simple_spinner_item,paths);
 
         spinner.setOnItemSelectedListener(this);

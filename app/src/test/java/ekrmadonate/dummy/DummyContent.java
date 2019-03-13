@@ -1,4 +1,4 @@
-package com.awad.ekrma.ekrmadonate.dummy;
+package ekrmadonate.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

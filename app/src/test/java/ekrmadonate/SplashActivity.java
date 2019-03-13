@@ -1,8 +1,10 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.awad.ekrma.ekrmadonate.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 try {
                     sleep(3000);
-                    Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+                    Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(i);
 
                 } catch (InterruptedException e) {

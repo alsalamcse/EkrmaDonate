@@ -1,13 +1,13 @@
-package com.awad.ekrma.ekrmadonate;
+package ekrmadonate;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.awad.ekrma.ekrmadonate.data.MyTask;
+import com.awad.ekrma.ekrmadonate.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -52,7 +52,7 @@ public class ShowAllTasksActivity extends ArrayAdapter implements ShowAllTasksAc
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Toast.makeText( ShowAllTasksActivity.this, "dgfgd", Toast.LENGTH_SHORT ).show();;
+                Toast.makeText( ShowAllTasksActivity.this, "hahah.", Toast.LENGTH_SHORT).show();
                 taskAdapter.clear();
                 for (DataSnapshot d : dataSnapshot.getChildren()) {
                     MyTask task = d.getValue(MyTask.class);
